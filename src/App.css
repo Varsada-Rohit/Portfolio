@@ -1,15 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap");
+* {
+  font-family: "Raleway", sans-serif;
+}
 .nav-link {
-  color:black;
+  color: black;
   font-weight: 500;
 }
-.active{
-  color:red;
+.active {
+  color: red;
 }
-a.nav-link{
+a.nav-link {
   position: relative;
   margin-right: 2rem;
 }
-a.nav-link::after{
+a.nav-link::after {
   position: absolute;
   display: block;
   bottom: 0;
@@ -22,12 +26,45 @@ a.nav-link::after{
   background-color: red;
 }
 a.nav-link:hover:after {
-  color:pink;
-  width:100%;
+  color: pink;
+  width: 100%;
 }
-a.nav-link:hover{
+a.nav-link:hover {
   color: red;
 }
+
+.heading-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10rem;
+}
+.heading {
+  font-size: 9rem;
+  font-weight: 700;
+}
+.sub-heading {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
 ul.navbar-nav {
   margin-right: 5%;
-} 
+}
+
+@media only screen and (max-width: 600px) {
+  .heading-container {
+    margin-top: 5rem;
+  }
+  .heading {
+    font-size: 7rem;
+    font-weight: 700;
+  }
+  .sub-heading {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .lottieAnim {
+    order: 1;
+  }
+}
