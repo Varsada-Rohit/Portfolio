@@ -32,29 +32,46 @@ a.nav-link:hover:after {
 a.nav-link:hover {
   color: red;
 }
-
+.btn-link {
+  color: black;
+  font-size: 1.5rem;
+}
+.filter {
+  display: flex;
+  margin: 0 5rem;
+  justify-content: space-between;
+}
+.grid-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
 .heading-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: 10rem;
+  margin: 8rem 0;
+  width: 100%;
 }
 .heading {
   font-size: 9rem;
   font-weight: 700;
 }
+
 .sub-heading {
   font-size: 2.5rem;
-  font-weight: 400;
+  font-weight: 700;
 }
-
+.tab-container {
+  display: flex;
+  justify-content: space-between;
+}
 ul.navbar-nav {
   margin-right: 5%;
 }
 
 @media only screen and (max-width: 600px) {
   .heading-container {
-    margin-top: 5rem;
+    margin: 3rem 0;
   }
   .heading {
     font-size: 7rem;
@@ -62,7 +79,7 @@ ul.navbar-nav {
   }
   .sub-heading {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 700;
   }
   .lottieAnim {
     order: 1;
