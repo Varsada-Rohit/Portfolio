@@ -2,10 +2,10 @@ import "../App.css";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light ">
+    <nav className="navbar navbar-expand-lg navbar-light  ">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          Nexart
+          <b>Nexart</b>
         </a>
         <button
           className="navbar-toggler"
